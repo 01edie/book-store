@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+  font-size: 16px;
+}
+body{
+  font-family: sans-serif;
+  color: rgb(7, 50, 87);
+  background-color: rgb(213, 247, 245);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.book-store{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.book-store-title{
+  font-size: 1.5rem;
+  margin: 1rem auto;
+}
+.books{
+  display: grid;
+  align-items: center;
+}
+.book{
+  padding: 1rem;
+  background-color: #fff;
+  margin: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.25);
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (max-width:1500px) {
+  .books{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width:1200px) {
+  .books{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width:928px) {
+  .books{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width:768px) {
+  .books{
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.book-img-container{
+  width: 15rem;
+  height: 20rem;
+  margin: 1rem auto;
+}
+
+.book-img{
+  width: 80%;
+  height: auto;
+  display: inline-block;
+}
+
+.book-title{
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.book-author{
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn-cart{
+  padding: 0.5rem 1rem;
+  margin: 1rem ;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: rgb(156, 176, 194);
+  border: none;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.25);
 }
