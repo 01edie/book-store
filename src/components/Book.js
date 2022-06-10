@@ -7,11 +7,11 @@ const Book = (props) => {
     console.log(title);
     alert(`"${title}" has been added to cart`);
   }
-  const { image, title, author, price } = props
+  const { bookImage, title, author, price } = props
   return (
     <article className='book'>
       <div className="book-img-container">
-        <img className='book-img' src={image} alt="image" />
+        <img className='book-img' src={bookImage} alt="book" />
       </div>
       <h2 className="book-title">{title}</h2>
       <h3 className="book-author">{author.toUpperCase()}</h3>

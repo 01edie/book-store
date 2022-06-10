@@ -11,7 +11,7 @@ function App() {
     <div className="books">
     { BookRecords.map(
         (book)=>
-        <Book image = {book.image} key={book.id} title={book.title} author={book.author} price={book.price}/>) }
+        <Book bookImage = {book.image} key={book.id} title={book.title} author={book.author} price={book.price}/>) }
     </div>
     </section>
   );
