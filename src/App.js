@@ -7,7 +7,7 @@ import BookRecords from './db/Book';
 function App() {
   return (
     <section className='book-store'>
-    <h1 className='book-store-title'>my book store</h1>
+    <h1 className='book-store-title'>My book store</h1>
     <div className="books">
     { BookRecords.map(
         (book)=>
